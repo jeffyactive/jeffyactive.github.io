@@ -455,23 +455,23 @@ var BubbleServices = {
   
   Twitter: {
     keyString: 'twitter.com',
-    image: 'images/icons/twitter.png',
+    image: '../images/icons/twitter.png',
     tooltip: "See {{name}}'s tweets"
   },
   
   LinkedIn: {
     keyString: 'linkedin.com',
-    image: 'images/icons/linkedin.png'
+    image: '../images/icons/linkedin.png'
   },
   
   Instagram: {
     keyString: 'instagram.com',
-    image: 'images/icons/instagram.png'
+    image: '../images/icons/instagram.png'
   },
   
   Facebook: {
     keyString: 'facebook.com',
-    image: 'images/icons/facebook.png'
+    image: '../images/icons/facebook.png'
   }
   
 }
