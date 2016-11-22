@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title> Jeffrey Dungen | Fitbit Charge HR </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.0.2/ui-bootstrap-tpls.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-animate.min.js"></script>
+    <link rel="stylesheet" href="../style/bubble.css">
+    <link rel="stylesheet" href="../style/me.css">
+    <script type="text/javascript" src="../js/bubble.js"></script>
+    <script type="text/javascript" src="../js/cormorant.js"></script>
+    <script type="text/javascript" src="../js/cuttlefish.js"></script>
+    <script type="text/javascript" src="../js/visualisation.js"></script>
+    <script type="application/ld+json">
+    {
+      "@context": {
+        "schema": "http://schema.org/"
+      },
+      "@graph": [
+        {
+          "@id": "person",
+          "@type": "schema:Person",
+          "schema:givenName": "Jeffrey",
+          "schema:familyName": "Dungen",
+          "schema:gender": "Male",
+          "schema:nationality": "CA",
+          "schema:worksFor": "reelyActive",
+          "schema:jobTitle": "Co-founder and CEO",
+          "schema:sameAs": [
+            "https://twitter.com/reelyActive",
+            "https://ca.linkedin.com/in/dungen"
+          ],
+          "schema:image": "https://jeffyactive.github.io/fitbit/320x320.jpg"
+        },
+        {
+          "@id": "product",
+          "@type": "schema:Product",
+          "schema:name": "Charge HR",
+          "schema:manufacturer": {
+            "@type": "schema:Organization",
+            "schema:name": "Fitbit"
+          },
+          "schema:model": "Charge HR",
+          "schema:image": "https://jeffyactive.github.io/fitbit/product.jpg"
+        }
+      ]
+    }
+    </script>
+  </head>
+  <body ng-app="visualisation">
+    <div ng-controller="BubbleCtrl" id="bubblebox">
+      <bubble ng-if="story" json="story" size="320px" mode="desktop"
+              motion="true" fade="true"></bubble>
+    </div>
+  </body>
+</html>
