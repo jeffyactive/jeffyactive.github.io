@@ -3,7 +3,36 @@
   <head>
     <title> jeffyactive: the webpage </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/jeffyactive.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+    <script type="text/javascript" src="js/jeffyactive.js"></script>
   </head>
-  <body style="background-color:#000">
+  <body ng-app="jeffyactive">
+    <div class="container-fluid" ng-controller="QuoteCtrl">
+      <div class="row">
+        <div class="col-xs-0 col-sm-1 col-md-2 col-lg-3"> </div>
+        <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 vertical-parent">
+          <div class="vertical-child" ng-if="quote === 'Fuller'">
+            <p class="book-text"> Now that I have proven that an individual can be world-effective while eschewing either money or political advantage-making, I do my best to discourage others from taking patents, which almost never "pay off" to the inventor.  My patent taking was to effect a "bridgehead" accreditation to more effective employment of humanity's potentials. [...] Ideas are easy to come by; reduction to practice is an arduous but inspirationally rewarding matter. </p>
+            <blockquote>
+              <footer> <b>Buckminster Fuller</b> in <i>Critical Path</i>, 1980. </footer>
+            </blockquote>
+          </div>
+          <div class="vertical-child" ng-if="quote === 'Hidalgo'">
+            <p class="book-text"> As the universe moves on and entropy continues to increase, our planet continues its rebellious path marked by pockets that are rich in information.  Enslaved by the growth of order, we form social relationships, make professional alliances, beget children, and, of course, laugh and cry.  But we often lose sight of the beauty of information.  We get lost in the urgency of the moment, as our minds race like whirlpools and our lives compute forward in a universe that has no past.  We worry about money and taxes instead of owning the responsibility of perpetuating this godless creation: a creation that grew from modest physical principles and which has now been bestowed upon us. </p>
+            <blockquote>
+              <footer> <b>Cesar Hidalgo</b>'s closing paragraph of <i>Why Information Grows</i>, 2015. </footer>
+            </blockquote>
+          </div>
+          <div class="vertical-child" ng-if="quote === 'Wiener'">
+            <p class="book-text"> Those of us who have contributed to the new science of cybernetics thus stand in a moral position which is, to say the least, not very comfortable.  We have contributed to the initiation of a new science which, as I have said, embraces technical developments with great possibilitites for good and evil.  We can only hand it over into the world that exists about us, and this is the world of Belsen and Hiroshima.  We do not even have the choice of suppressing these new technical developments.  They belong to the age and the most any of us can do by suppression is to put the development of the subject into the hands of the most irresponsible and most venal of our engineers.  The best we can do is to see that a large public understands the trend and the bearing of the present work, and to confine our personal efforts to these fields, such as physiology and psychology, most remote from war and exploitation.  As we have seen, there are those who hope that the good of a better understanding of man and society which is offered by this new field of work may anticipate and outweigh the incidental contribution we are making to the contration of power (which is always concentrated, by its very conditions of existence, in the hands of the most unscrupulous).  I write in 1947, and I am compelled to say that it is a very slight hope. </p>
+            <blockquote>
+              <footer> <b>Norbert Wiener</b>'s closing paragraph of the Introduction of <i>Cybernetics: or Control and Communication in the Animal and the Machine</i>, written from the Instituto Nacional de Cardiologia, Ciudad de Mexico, November 1947. </footer>
+            </blockquote>
+          </div>
+        </div>
+      <div class="col-xs-0 col-sm-1 col-md-2 col-lg-3"> </div>
+    </div>
   </body>
 </html>
