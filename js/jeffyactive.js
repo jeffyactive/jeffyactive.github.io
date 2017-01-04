@@ -1,4 +1,4 @@
-const QUOTES = [ 'Fuller', 'Hidalgo', 'Wiener' ];
+const QUOTES = [ 'Fuller', 'Hidalgo', 'Kauffman', 'Wiener' ];
 const CYCLE_MILLISECONDS = 30000;
 
 angular.module('jeffyactive', [])
