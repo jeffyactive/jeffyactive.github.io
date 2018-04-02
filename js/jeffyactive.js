@@ -1,5 +1,5 @@
 const QUOTES = [ 'Dallaire', 'Fuller', 'Hidalgo', 'Kauffman', 'Penfield',
-                 'Wiener' ];
+                 'Wheatley', 'Wiener' ];
 const CYCLE_MILLISECONDS = 30000;
 
 angular.module('jeffyactive', [])
